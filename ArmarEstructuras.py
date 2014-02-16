@@ -45,11 +45,11 @@ def CrearEstructuras():
 		elif 'CerrarListaDevices' in respuesta:
 			print("No hay mas dispositivos")
 		
-		elif 'SaltarLinea' in respuesta:
-			print(linea)
-	print(listaDevices[0].id)
-	print(listaDevices[1].groups_list[1].id)
-	print(len(listaDevices))
+		#elif 'SaltarLinea' in respuesta:
+		#	print(linea)
+	#print(listaDevices[0].id)
+	#print(listaDevices[1].groups_list[1].id)
+	#print(len(listaDevices))
 	
 def ProcesarLinea(linea=""):
 	if '<devices>' in linea:
