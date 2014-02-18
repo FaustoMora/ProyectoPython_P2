@@ -1,3 +1,3 @@
-from ArmarEstructuras import CrearEstructuras
+import ArmarEstructuras
 
-CrearEstructuras()
+ArmarEstructuras.CrearEstructuras()
