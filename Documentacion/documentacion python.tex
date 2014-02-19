@@ -1,0 +1,167 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+%\usepackage{babel}
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+% read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{setspace} %paquete para interlineado
+\usepackage{graphicx} %para insertar graficos
+\usepackage{parskip} % npi de q es
+\usepackage{color} %colores
+\usepackage{float}
+
+
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+\usepackage[spanish]{babel}
+\usepackage{listings}
+%%% The "real" document content comes below...
+
+\title{Proyecto de Lenguajes de Programaci\'on \\ Segundo Parcial \\ Python}
+\author{\\Fausto Mora \\Christian Vergara \\ Angel Gonz\'alez}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed
+\begin{document}
+
+
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed
+
+\maketitle
+
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+
+\newpage
+\thispagestyle{empty}
+
+
+\section{\textbf{Introducción}}
+
+Este documento describe la realizaci\'on de un proyecto basado en el lenguaje Python. El proyecto consiste en la elaboraci\'on de un parser para archivos xml, y la obtenci\'on de datos del mismo.
+\\El proyecto fue realizado como proyecto de segundo parcial para la materia de Lenguajes de Programaci\'on con el fin de cubrir los siguientes puntos de interes:
+\begin{itemize}
+\item Conocer la sintaxis y semántica del lenguaje Python.
+\item Escribir un programa utilizando un lenguaje de diferente paradigma y que nos permita comparar sus características y similitudes con otros lenguajes ya conocidos.
+\item Fomentar el uso de herramientas colaborativas para la elaboraci\'on de proyectos.
+\item Realizar un parser para archivos xml y obtener datos del mismo
+\end{itemize}
+Para concluir en la realizaci\'on del proyecto formamos un grupo de tres personas y empezamos a desarrollarlo de manera conjunta para implementar las caracter\'isticas del parser. Como recursos para aprender la sintaxis y sem\'antica del lenguaje de programaci\'on Python, consultamos distintas fuentes en l\'inea. Como herramienta de versionamiento de proyectos utilizamos GitHub. Esto nos permiti\'o trabajar de manera remota desde donde lo deseabamos y poder revisar los avances de cada integrante en l\'inea. Ocasionalmente tuvimos que reunirnos para discutir el rumbo del proyecto e implementar caracter\'isticas que requerieron nuestro esfuerzo conjunto.
+\\Este documento presenta de manera organizada la documentaci\'on de nuestro proyecto incluyendo aspectos como la descripci\'on del proyecto en s\'i donde inclu\'imos los objetivos generales y espec\'ificos que busca cumplir nuestra aplicaci\'on, el alcance del mismo donde describimos las caracter\'isticas que logramos implementar y las que no, , conclusiones elaboradas en base a nuestra experiencia obtenida al realizar la aplicaci\'on, y finalmente una secci\'on de anexos donde incluimos un manual de nuestrol proyecto.
+
+\section{\textbf{Descripci\'on del Proyecto}}
+\subsection{\textbf{Prop\'osito}}
+Al finalizar el proyecto, los responsables del mismo presentaremos un parser de archivos xml ; desarrollado haciendo uso del lenguaje de programaci\'on Python, y de herramientas de software y dispositivos en donde pueda ser emulado y ejecutado, a fin de adquirir conocimientos en dicho lenguaje de programaci\'on y las herramientas involucradas, para fortalecer nuestras competencias en el "Desarrollo de proyectos con diferentes lenguajes de programaci\'on representando diferentes paradigmas de lenguajes."
+\subsection{\textbf{Producto}}
+El parser nos permitir\'a obtener informacion de un archivo xml, asi como manejar etiquietas de apertura y cierre de un archivo xml comun.
+\\El producto ser\'a desarrollado en el lenguaje de programaci\'o Phyton, en el IDE o entorno de desarrollo Aptana Studio 3. El parser sera desarrollado con la vers\'on 2.7 de este lenguaje.
+\subsection{\textbf{Objetivos}}
+Para lograr cumplir nuestro prop\'osito planteamos los siguientes objetivos.
+\subsubsection{\textbf{Objetivos Generales}}
+\begin{itemize}
+\item Crear un Parser para archivos XML en el lenguaje de programacion Python
+\item Conocer la sintaxis y sem\'antica del lenguaje de programaci\'on Python y sus IDES de desarrollo.
+\item Desarrollar competencias en la utilizaci\'on de diferentes paradigmas de los lenguajes de programaci\'on.
+\end{itemize}
+\subsubsection{\textbf{Objetivos Espec\'ificos}}
+\begin{itemize}
+\item Implementar el Parser Xml y obtener datos de este archivo
+\item Hacer uso de herramientas que nos permitan desarrollar programas basados en este lenguaje.
+\item Utilizar las caracter\'isticas del lenguaje de programac\'on  Pythno de manera eficiente y \'optima.
+\end{itemize}
+\subsection{\textbf{Alcance}}
+\subsubsection{\textbf{Caracter\' isticas implementadas}}
+El ParserXml extrae la informacion de un archivo y lo almacena de tal manera que puede ser procedado y almacenado, de acuerdo a sus propiedades (tags) en una lista de listas, o un arbol.
+El programa permite el acceso a cualquiera de estos dispositivos dentro de la lista para examinar o consultar sus propiedades y asi poder extraer un conjunto de dispositivos con determinada caracteristica.
+Tambien implementa la seccion "fallback" para la busqueda de dispositivos o Devices con caracteristicas que se encuentran en una clase relacionada.
+
+
+\subsection{\textbf{Entregables}}
+El proyecto incluye la entrega de lo siguiente:
+
+\begin{itemize}
+\item El link del repositorio GIT donde se encuentra el c\'odigo fuente.
+\item Documentación en LaTeX ( incluidos el PDF y el c\'odigo fuente). Estos documentos y todos los recursos que se necesiten para la ejecuci\'on del c\'odigo fuente deber estar dentro de una carpeta llamada \textsl{doc}.
+\end{itemize}
+
+
+
+
+\newpage
+\thispagestyle{empty}
+
+\section{\textbf{Clases utilizadas en el Programa}}
+
+
+
+La pantalla de juego est\'a formada por un tablero de juego en donde se colocan las minas y un panel con informaci\'on y un bot\'on de reinicio.
+\\A continuaci\'on se describen las partes del tablero se\~naladas en la \textbf{Figura \ref{partesdeltablero}}:
+
+\begin{itemize}
+
+\item \textbf{1.Device:}Esta clase es la encargada de almacenar estructuras del tag Device que incluye una lista de Group
+\item \textbf{2. Group:}Esta clase es la encargada de almacenar estructuras del tag Group que incluye una lista de Capabilities
+\item \textbf{3.Capability:}Esta clase almacena informacion referente a las capabilities de cada device, en ellas se aplica el fallback para clases relacionadas
+
+
+\end{itemize}
+
+\newpage
+\thispagestyle{empty}
+
+\section{\textbf{Conclusiones}}
+
+Podemos concluir que Python es un lenguaje muy flexible en cuanto a declariaciones, uso de variables y m\'etodos, su uso tiene variadas aplicaciones, desde programas con caracter\'isticas gr\'aficas, hasta aplicaciones web (con Django), y muchos otros frameworks que nos permiten utilizarlo en mas de un \'area.
+\\Aunque se trat\'o de un lenguaje nuevo para nosotros el ambiente de desarrollo que nos ofreci\'o  Python fue muy agradable, programar en este lenguaje nos d\'a bastantes facilidades, ademas de que la sintaxis es muy flexible, y si agregamos a esto el uso de un IDE, nos facilita bastante el ambiente de trabajo.
+\\Programar en este lenguaje nos brind\'o la posibilidad de aplicar los conocimientos aprendidos a lo largo del curso en el libro de Sebesta, su ambiente din\'amico nos da muchas facilidades.
+
+
+
+
+\end{document}
